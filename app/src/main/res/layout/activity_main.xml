@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_marginTop="12dp"
+        android:padding="1dp"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name_Id"
+        />
+
+
+    <TextView
+        android:id="@+id/pass_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:layout_marginTop="78dp"
+        android:padding="1dp"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/pass_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@id/pass_Id"
+        android:layout_marginTop="70dp"
+        />
+
+
+    <Button
+        android:id="@+id/sv_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_Id"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#5C3B97"
+        android:onClick="Save"
+        android:text="Save" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/pass_Id"
+        android:layout_toRightOf="@id/sv_btn"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#5C3B97"
+        android:text="Next"
+        android:onClick="Next"
+        />
+</RelativeLayout>
